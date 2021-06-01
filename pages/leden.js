@@ -2,11 +2,14 @@ import db from "../db";
 
 export default function leden({ leden }) {
   return (
-    <ul>
-      {leden.map((lid) => (
-        <li key={lid.id}>{lid.naam}</li>
-      ))}
-    </ul>
+    <>
+      <h1>Dit is de leden pagina</h1>
+      <ul>
+        {leden.map((lid) => (
+          <li key={lid.id}>{lid.naam}</li>
+        ))}
+      </ul>
+    </>
   );
 }
 
